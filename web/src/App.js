@@ -1,11 +1,11 @@
 import React from "react";
 
 import "./global.css";
-import Logon from "./pages/logon";
+import Routess from "./routes";
 
 function App() {
   return (
-    <Logon />
+    <Routess />
   );
 }
 
