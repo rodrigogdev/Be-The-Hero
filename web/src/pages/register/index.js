@@ -29,11 +29,11 @@ export default function Register() {
     try {
       const response = await api.post("ongs", data);
 
-      alert(`Seu ID de acesso: ${response.data.id}`);
+      alert(`Your access ID: ${response.data.id}`);
 
       navigate('/');
     } catch (err) {
-      alert("Erro no cadastro, tente novamente.");
+      alert("Error in registration, try again.");
     }
   }
 
@@ -43,21 +43,21 @@ export default function Register() {
         <section>
           <img src={logoImg} alt="Be The Hero" />
 
-          <h1>Cadastro</h1>
-          <p>Faça seu cadastro, entre na plataforma e ajude pessoas a encontrarem os casos da sua ONG.</p>
+          <h1>Register</h1>
+          <p>Make your registration, help people find the cases of your NGO.</p>
           
           <Link className= "back-link" to="/">
             <FiArrowLeft size={16} color="#E02041" />
-            Não tenho cadastro
+            I don't have an register
           </Link>
         </section>
 
         <form onSubmit={handleRegister}>
-          <input placeholder="Nome da ONG"
+          <input placeholder="NGO's name"
             value={name}
             onChange={e => setName(e.target.value)}
           />
-          <input type="email" placeholder="E-mail"
+          <input type="email" placeholder="Email"
             value={email}
             onChange={e => setEmail(e.target.value)}
           />
@@ -67,18 +67,18 @@ export default function Register() {
           />
 
           <div className="input-group">
-            <input placeholder="Cidade" 
+            <input placeholder="City" 
               value={city}
               onChange={e => setCity(e.target.value)}
             />
-            <input placeholder="UF"
-              style={{width: 80}}
+            <input placeholder="State"
+              style={{width: 100}}
               value={uf}
               onChange={e => setUf(e.target.value)}
             />
           </div>
 
-          <button className="button" type="submit" >Cadastrar</button>
+          <button className="button" type="submit" >Register</button>
         </form>
       </div>
     </div>

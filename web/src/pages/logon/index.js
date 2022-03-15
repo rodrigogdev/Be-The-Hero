@@ -32,16 +32,16 @@ export default function Logon() {
       <section className="form">
         <img src={logoImg} alt="Be The Hero" />
         <form onSubmit={handleLogin}>
-          <h1>Faça seu Logon</h1>
+          <h1>Logon</h1>
 
-          <input placeholder="Sua ID" 
+          <input placeholder="Your ID" 
             value={id}
             onChange={e => setId(e.target.value)}
           />
-          <button className="button" type="submit">Entrar</button>
+          <button className="button" type="submit">Login</button>
           <Link className= "back-link" to="/register">
             <FiLogIn size={16} color="#E02041" />
-            Não tenho cadastro</Link>
+            I don't have an account</Link>
         </form>
       </section>
     
