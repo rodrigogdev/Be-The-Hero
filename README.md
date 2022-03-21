@@ -15,7 +15,7 @@ they can create a form with detailed description and the cost about the situatio
 
 ### :sunglasses: Live Demo
 
-A live demo of the application is available <a href="https://rodrigogdev-be-the-hero.herokuapp.com/">HERE</a>
+A live demo of the application is available <a target="_blank" href="https://rodrigogdev-be-the-hero.herokuapp.com/">HERE</a>
 
 
 ### :rocket: Used Technologies
